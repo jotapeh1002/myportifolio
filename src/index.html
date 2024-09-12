@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
+    <!-- <style>
+        /* Animação de movimento do lado */
+        @keyframes mover-lateral {
+            0% {
+                transform: translateX(-100vw); /* Começa fora da tela à esquerda */
+                opacity: 0; /* Inicia invisível */
+            }
+            50% {
+                transform: translateX(50vw); /* Move para o meio da tela */
+                opacity: 1; /* Torna visível */
+            }
+            100% {
+                transform: translateX(0); /* Termina na posição final */
+                opacity: 1; /* Totalmente visível */
+            }
+        }
+
+        @keyframes mover-em-cima {
+            0% {
+                transform: translateY(-100vw); /* Começa fora da tela à esquerda */
+                opacity: 0; /* Inicia invisível */
+            }
+            50% {
+                transform: translateY(50vw); /* Move para o meio da tela */
+                opacity: 1; /* Torna visível */
+            }
+            100% {
+                transform: translateY(0); /* Termina na posição final */
+                opacity: 1; /* Totalmente visível */
+            }
+        }
+
+        .animacao-lateral {
+            animation: mover-lateral 1.5s ease-out forwards;
+            /* Pode adicionar outras estilizações aqui */
+        }
+
+        .animacao-em-cima {
+            animation: mover-em-cima 1.5s ease-out forwards;
+            /* Pode adicionar outras estilizações aqui */
+        }
+
+    </style> -->
+</head>
+
+<body
+    class="bg-no-repeat  bg-cover backdrop-blur bg-[url('https://img.freepik.com/vetores-premium/linha-de-onda-colorida-estilizada-elemento-de-design_213860-720.jpg?w=740')] h-screen overflow-hidden overflow-x-hidden">
+
+
+    <div class="flex items-center justify-center md:justify-between  text-white p-4 h-16">
+        <div class="ms-10">
+            <span class="text-lg me-5 hidden md:block">Hey!</span>
+        </div>
+        <div class="gap-9 flex me-10 text-sm xl:text-base items-center z-10 mt-2">
+            <a href="#" class="hover:border-b-2 hover:border-red-500">Home</a>
+            <a href="#" class="hover:border-b-2 hover:border-red-500">Projetos</a>
+            <a href="#" class="hover:border-b-2 hover:border-red-500">Sobre</a>
+            <a href="#" class="hover:border-b-2 hover:border-red-500">Contato</a>
+        </div>
+    </div>
+
+    <div class="flex xl:-translate-y-28 text-white h-screen justify-between xl:gap-96 md:gap-0 items-end md:ml-7 xl:justify-center xl:items-center xl:flex-row flex-col">
+        <div class=" text-3xl mt-16 xl:mt-0 xl:text-4xl mx-10 xl:w-[60%] md:mr-52  animacao-em-cima">
+            <p class="mb-2">Olá, me chamo <sapn class="text-yellow-400">Alisson</sapn>
+            </p>
+            <p>Sou desenvolvedor <span class="text-yellow-500">Full-Stack</span></p>
+            <br>
+            <p>
+                <p class=" text-sm xl:text-lg">
+                    Com uma inicial dedicada ao desenvolvimento full stack,
+                    ofereço uma visão holística do ciclo de vida do software.
+                    Meu foco está em criar aplicações eficientes e de alta qualidade,
+                    que combinam tecnologia de ponta com uma excelente
+                    experiência do usuário.
+                </p>
+            </p>
+        </div>
+
+        <div
+            class=" animacao-lateral mb-24 xl:mt-20 xl:mb-0 rounded-l-full xl:w-[900px] xl:h-[400px] w-[200px] h-[200px]  flex bg-slate-500 bg-opacity-80 overflow-hidden">
+            <img src="iconpersona.png" width="430px" alt="" class="translate-x-2">
+        </div>
+    </div>
+    <!-- <div class="text-white">
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+        <p>dfdfdfdf</p>
+    </div> -->
+
+</body>
+
+</html>
