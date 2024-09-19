@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box-shadow:hover {
+    box-shadow: 0 2px rgba(222, 222, 0, 0.6);
+    scale: 1.1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes mover-lateral {
+    0% {
+        transform: translateX(50vw);
+        /* Começa fora da tela à esquerda */
+        opacity: 0;
+        /* Inicia invisível */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Termina na posição final */
+        opacity: 1;
+        /* Totalmente visível */
+    }
+}
+
+@keyframes mover-em-cima {
+    0% {
+        transform: translateY(-40vw);
+        /* Começa fora da tela à esquerda */
+        opacity: 0;
+        /* Inicia invisível */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Termina na posição final */
+        opacity: 1;
+        /* Totalmente visível */
+    }
+}
+
+.animacaolateral1 {
+    animation: mover-lateral 1.5s ease-out forwards;
+    /* Pode adicionar outras estilizações aqui */
+}
+
+.animacaoemcima1 {
+    animation: mover-em-cima 1.5s ease-out forwards;
+    /* Pode adicionar outras estilizações aqui */
+}

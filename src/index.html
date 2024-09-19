@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+</head>
+
+<body class="bg-contain bg-[url('bg.png')] ">
+
+    <nav class=" flex justify-between backdrop-blur bg-gradient-to-t from-transparent 00 to-black  bg-opacity-80 z-50 shadow-sm
+     text-white p-5 h-16 fixed w-screen">
+        <div class="ml-7">
+            <span class="text-purple-500"> &lt;/ <span class="text-white">Hey</span> &gt;<span />
+        </div>
+        <div class="flex gap-6 mr-10">
+            <a href="#home" class="hover:border-b-2 hover:border-red-500">Home</a>
+            <a href="#projetos" class="hover:border-b-2 hover:border-red-500">Projetos</a>
+            <a href="#sobre"" class=" hover:border-b-2 hover:border-red-500">sobre</a>
+        </div>
+    </nav>
+
+    <header class="">
+
+        <div class="flex h-[100dvh] items-center justify-between" id="home">
+            <div class="text-white mx-20 w-[80vh] animacao-em animacao-em-cima">
+                <div class="text-4xl text-white mb-8">
+                    <span>
+                        Olá, me chamo
+                    </span>
+                    <span class="text-yellow-500"> Alisson</span>
+                    <p class=" mt-1 text-4xl text-white">
+                        Sou desenvolvedor <span class="text-yellow-500"> Full Stack </span>
+                    </p>
+                </div>
+                <div>
+                    Com uma inicial dedicada ao desenvolvimento full stack,
+                    ofereço uma visão holística do ciclo de vida do software.
+                    Meu foco está em criar aplicações eficientes e de alta qualidade,
+                    que combinam tecnologia de ponta com uma excelente experiência do usuário.
+                </div>
+
+                <div class="flex gap-5">
+                    <div class="text-white rounded-full hover:bg-gray-600 bg-gray-700 w-32 text-center p-2 mt-10">
+                        <a href="https://github.com/jotapeh1002">Linkedin</a>
+                    </div>
+                    <div class="text-white rounded-full bg-green-700 hover:bg-green-600 w-32 text-center p-2 mt-10">
+                        Whatsapp
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-white flex justify-end animacao-lateral">
+                <div class=" w-[65vh] h-[35vh] rounded-s-full overflow-hidden bg-slate-500 bg-opacity-60">
+                    <img class="translate-x-5" src="iconpersona.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white h-screen flex flex-col justify-center caixa1" id="sobre">
+
+            <p class=" m-10 text-4xl text-center"> MINHAS ESPECIALIDADES </p>
+
+            <div class=" grid grid-cols-3 gap-20 m-32 caixa">
+
+                <div
+                    class="box-shadow rounded-3xl h-96 text-red-400 bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                    <img src="/src/html_html5_web_programing_developer-512.webp" width="190vh" alt="">
+                    <span class="mt-5 text-2xl">HTML 5</span>
+                </div>
+
+                <div
+                    class="box-shadow rounded-3xl h-96 text-blue-400 bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                    <img src="/src/logo-css-3-2048.png" width="230vh" alt="">
+                    <span class="mt-5 text-2xl">CSS - TAILWIND - BOOTSTRAP</span>
+                </div>
+
+                <div
+                    class="box-shadow rounded-3xl h-96 text-yellow-400 bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                    <img src="/src/javascript-logo-javascript-icon-transparent-free-png.webp" width="240vh" alt="">
+                    <span class="mt-5 text-2xl">JAVASCRIPT - REACT - NODE.JS</span>
+                </div>
+
+            </div>
+           
+        </div>
+
+        <div class="text-white h-screen flex flex-col justify-center caixa1" id="projetos">
+
+            <p class=" m-10 text-4xl text-center inline-block"> PROJETOS </p>
+
+            <div class=" grid grid-cols-3 gap-20 m-32 caixa">
+
+                <div
+                    class="box-shadow rounded-3xl h-96 bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                    
+                    <span class="mt-5 text-2xl">EM BREVE</span>
+                </div>
+
+                <div
+                    class="box-shadow rounded-3xl h-96 bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                    
+                    <span class="mt-5 text-2xl">EM BREVE</span>
+                </div>
+
+                <div
+                    class="box-shadow rounded-3xl h-96  bg-slate-500 bg-opacity-10 flex-col flex justify-center items-center">
+                   
+                    <span class="mt-5 text-2xl">EM BREVE</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <script>
+        let sobre = document.getElementById('sobre')
+
+        addEventListener('click', func => {
+            setTimeout(function () {
+                    sobre.classList.add('animacao-em-cima1');
+            }, 1);
+        })
+    </script>
+
+</body>
+
+</html>
